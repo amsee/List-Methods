@@ -1,0 +1,68 @@
+#List Methods in Python
+'''
+.append() - adds a single element to the end of a list
+.extend() - adds multiple elements to the end of a list
+.insert() - adds an element at a specified index
+.remove() - removes a specific element from a list
+.pop() - removes an element at a specified index
+.clear() - removes all elements from a list
+.index() - returns the index of an element in a list
+.count() - returns the number of times a specified element appears in a list
+.reverse() - reverses the order of the elements in a list
+.copy() - creates a shallow copy of a list
+.sort() - sorts the elements of a list
+'''
+
+anime_list = [
+    'Attack on Titan', 'Chainsaw Man', 'Demon Slayer', 'Death Note',
+    'Hunter x Hunter', 'Jujutsu Kaisen', 'Tokyo Ghoul', 'Afro Samurai',
+    'Mushoku Tensei'
+]
+
+#Append to the list
+anime_list.append('Erased')  #One element added to the end of the list
+
+#Extend
+extended_list = [
+    'One Piece', 'Chobits', 'Card Capture Sakura', 'Sailormoon', 'Naruto',
+    'Code Geass', 'Gundam Seed', 'Trigun Stampede', 'Death Parade', 'Naruto',
+    'Naruto', 'Naruto', 'Naruto'
+]  #Multiple elements added to the end of the list
+anime_list.extend(extended_list)
+
+#Insert
+anime_list.insert(6, 'One Punch Man')  #One element added at a specified index
+
+#Remove
+anime_list.remove('One Piece')  #One element removed from the list
+
+#Pop
+anime_list.pop()  #One element removed from the list
+
+#Index
+index_of_chobits = anime_list.index('Chobits')
+print('Here is the index: ', index_of_chobits)
+
+#Pop
+anime_list.pop(11)  #One element removed from the list
+
+#Count
+count = anime_list.count('Naruto')
+print('Naruto shows up ' + str(count) + ' times in the list')
+
+#Reverse
+anime_list.reverse()
+print('Reversed list: ', anime_list)
+
+#Copy
+anime_list.copy()
+print('Copy of list: ', anime_list)
+
+#Sort
+anime_list.sort()
+print(anime_list)
+
+#Clear
+anime_list.clear()
+print(anime_list)
+
